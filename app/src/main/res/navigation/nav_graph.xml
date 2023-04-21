@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/filmsFragment">
+
+    <fragment
+        android:id="@+id/filmsFragment"
+        android:name="com.example.moviereview.presentation.sreens.FilmsFragment"
+        android:label="fragment_films"
+        tools:layout="@layout/fragment_films" >
+        <action
+            android:id="@+id/action_filmsFragment_to_reviewFragment"
+            app:destination="@id/reviewFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/reviewFragment"
+        android:name="com.example.moviereview.presentation.sreens.ReviewFragment"
+        android:label="fragment_review"
+        tools:layout="@layout/fragment_review" >
+        <action
+            android:id="@+id/action_reviewFragment_to_filmsFragment"
+            app:destination="@id/filmsFragment" />
+        <action
+            android:id="@+id/action_reviewFragment_to_reviewersFragment"
+            app:destination="@id/reviewersFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/reviewersFragment"
+        android:name="com.example.moviereview.presentation.sreens.ReviewersFragment"
+        android:label="fragment_reviewers"
+        tools:layout="@layout/fragment_reviewers" >
+        <action
+            android:id="@+id/action_reviewersFragment_to_reviewFragment"
+            app:destination="@id/reviewFragment" />
+        <action
+            android:id="@+id/action_reviewersFragment_to_filmsFragment"
+            app:destination="@id/filmsFragment" />
+    </fragment>
+</navigation>
