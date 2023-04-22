@@ -1,4 +1,4 @@
-package com.example.moviereview.presentation.sreens
+package com.example.moviereview.presentation.sreens.reviews
 
 import androidx.lifecycle.ViewModel
 

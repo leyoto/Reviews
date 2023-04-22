@@ -1,4 +1,4 @@
-package com.example.moviereview.presentation.sreens
+package com.example.moviereview.presentation.sreens.reviews
 
 import androidx.lifecycle.ViewModelProvider
 import android.os.Bundle
@@ -22,6 +22,9 @@ class FilmsFragment : Fragment() {
     ): View? {
         return inflater.inflate(R.layout.fragment_films, container, false)
     }
+
+
+
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)

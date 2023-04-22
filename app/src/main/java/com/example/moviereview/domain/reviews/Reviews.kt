@@ -1,6 +1,8 @@
-package com.example.moviereview.data.models
+package com.example.moviereview.domain.reviews
 
-data class NewResponce(
+import com.example.moviereview.domain.reviews.Result
+
+data class Reviews(
     val copyright: String,
     val has_more: Boolean,
     val num_results: Int,

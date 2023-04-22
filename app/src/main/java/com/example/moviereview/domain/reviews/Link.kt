@@ -1,4 +1,4 @@
-package com.example.moviereview.data.models
+package com.example.moviereview.domain.reviews
 
 data class Link(
     val suggested_link_text: String,

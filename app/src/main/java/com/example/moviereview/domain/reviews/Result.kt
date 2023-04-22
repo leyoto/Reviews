@@ -1,4 +1,7 @@
-package com.example.moviereview.data.models
+package com.example.moviereview.domain.reviews
+
+import com.example.moviereview.domain.reviews.Link
+import com.example.moviereview.domain.reviews.Multimedia
 
 data class Result(
     val byline: String,

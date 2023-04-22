@@ -1,4 +1,4 @@
-package com.example.moviereview.presentation.sreens
+package com.example.moviereview.presentation.sreens.ctitics
 
 import androidx.lifecycle.ViewModelProvider
 import android.os.Bundle
@@ -8,24 +8,24 @@ import android.view.View
 import android.view.ViewGroup
 import com.example.moviereview.R
 
-class ReviewFragment : Fragment() {
+class ReviewersFragment : Fragment() {
 
     companion object {
-        fun newInstance() = ReviewFragment()
+        fun newInstance() = ReviewersFragment()
     }
 
-    private lateinit var viewModel: ReviewViewModel
+    private lateinit var viewModel: ReviewersViewModel
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.fragment_review, container, false)
+        return inflater.inflate(R.layout.fragment_reviewers, container, false)
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
-        viewModel = ViewModelProvider(this).get(ReviewViewModel::class.java)
+        viewModel = ViewModelProvider(this).get(ReviewersViewModel::class.java)
         // TODO: Use the ViewModel
     }
 

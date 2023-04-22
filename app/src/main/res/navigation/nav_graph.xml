@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/filmsFragment"
-        android:name="com.example.moviereview.presentation.sreens.FilmsFragment"
+        android:name="com.example.moviereview.presentation.sreens.reviews.FilmsFragment"
         android:label="fragment_films"
         tools:layout="@layout/fragment_films" >
         <action
@@ -16,7 +16,7 @@
     </fragment>
     <fragment
         android:id="@+id/reviewFragment"
-        android:name="com.example.moviereview.presentation.sreens.ReviewFragment"
+        android:name="com.example.moviereview.presentation.sreens.reviewers.ReviewFragment"
         android:label="fragment_review"
         tools:layout="@layout/fragment_review" >
         <action
@@ -28,7 +28,7 @@
     </fragment>
     <fragment
         android:id="@+id/reviewersFragment"
-        android:name="com.example.moviereview.presentation.sreens.ReviewersFragment"
+        android:name="com.example.moviereview.presentation.sreens.ctitics.ReviewersFragment"
         android:label="fragment_reviewers"
         tools:layout="@layout/fragment_reviewers" >
         <action
