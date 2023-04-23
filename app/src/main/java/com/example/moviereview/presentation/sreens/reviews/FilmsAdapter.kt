@@ -22,5 +22,6 @@ class FilmsAdapter: RecyclerView.Adapter<FilmsAdapter.FilmsViewHolder>() {
 
     }
 
+
 }
 }
