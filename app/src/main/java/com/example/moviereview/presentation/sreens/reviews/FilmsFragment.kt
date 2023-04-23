@@ -10,12 +10,6 @@ import com.example.moviereview.R
 
 class FilmsFragment : Fragment() {
 
-    companion object {
-        fun newInstance() = FilmsFragment()
-    }
-
-    private lateinit var viewModel: FilmsViewModel
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -23,13 +17,12 @@ class FilmsFragment : Fragment() {
         return inflater.inflate(R.layout.fragment_films, container, false)
     }
 
-
-
-
-    override fun onActivityCreated(savedInstanceState: Bundle?) {
-        super.onActivityCreated(savedInstanceState)
-        viewModel = ViewModelProvider(this).get(FilmsViewModel::class.java)
-        // TODO: Use the ViewModel
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
     }
+
+
+
+
 
 }
