@@ -8,33 +8,15 @@
     tools:context=".presentation.sreens.reviews.FilmsFragment">
 
 
-    <TextView
-        android:layout_width="51dp"
-        android:layout_height="34dp"
-        android:lineSpacingExtra="20sp"
-        android:text="First"
-        android:textColor="#2196F3"
-        android:textSize="24sp"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_films"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/materialButton"
-        app:layout_constraintEnd_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.164" />
-
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/materialButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Next"
-        android:textAllCaps="false"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.499" />
-
-
+        app:layout_constraintVertical_bias="1.0"
+        tools:listitem="@layout/item_article" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -8,7 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import com.example.moviereview.R
 
-class ReviewFragment : Fragment() {
+class ReviewFragment : Fragment() { /*
 
     companion object {
         fun newInstance() = ReviewFragment()
@@ -29,4 +29,4 @@ class ReviewFragment : Fragment() {
         // TODO: Use the ViewModel
     }
 
-}
+*/}

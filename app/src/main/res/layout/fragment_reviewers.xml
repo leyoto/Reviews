@@ -5,26 +5,24 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".presentation.sreens.ctitics.ReviewersFragment">
+
+    tools:context=".presentation.sreens.reviewers.ReviewFragment"
+    >
 
     <TextView
         android:layout_width="60dp"
         android:layout_height="38dp"
-        android:layout_marginStart="16dp"
         android:layout_marginTop="24dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="351dp"
+        android:layout_marginBottom="853dp"
         android:lineSpacingExtra="20sp"
         android:text="Third"
         android:textColor="#2196F3"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="parent"
-        app:layout_constraintEnd_toTopOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.164" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/materialButton"
@@ -42,4 +40,4 @@
         tools:layout_editor_absoluteY="211dp" />
 
 
-</>
+</androidx.constraintlayout.widget.ConstraintLayout>

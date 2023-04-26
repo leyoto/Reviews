@@ -12,5 +12,5 @@ interface ApiService {
     suspend fun getCritics(): critics
 
     @GET("svc/movies/v2/reviews/search.json?api-key=GW5a0tJfWOcfQ7k3dpQizIsrmpZ33Bmm")
-    suspend fun getReviews():List<com.example.moviereview.domain.reviews.Result>
+    suspend fun getReviews():Reviews
 }
