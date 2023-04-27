@@ -1,6 +1,6 @@
 package com.example.moviereview.presentation.sreens.reviews
 
-import androidx.lifecycle.ViewModelProvider
+
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -11,7 +11,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.moviereview.R
 import com.example.moviereview.data.api.ApiService
 import com.example.moviereview.databinding.FragmentFilmsBinding
-import com.example.moviereview.domain.reviews.Reviews
+
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
@@ -32,9 +32,8 @@ class FilmsFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        _binding = FragmentFilmsBinding.inflate(inflater,container,false)
-        val view = binding.root
-        return view
+        _binding = FragmentFilmsBinding.inflate(inflater, container, false)
+        return binding.root
         /*return inflater.inflate(R.layout.fragment_films, container, false)*/
     }
     override fun onDestroyView() {

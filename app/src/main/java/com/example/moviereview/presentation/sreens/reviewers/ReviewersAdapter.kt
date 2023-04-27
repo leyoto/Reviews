@@ -5,7 +5,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.moviereview.domain.critics.critics
 
-/*class ReviewersAdapter (val reviews:List<critics>): RecyclerView.Adapter<ReviewViewHolder>() {/*
+class ReviewersAdapter (val reviews:List<critics>): RecyclerView.Adapter<ReviewViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ReviewViewHolder {
         val view= LayoutInflater.from(parent.context).inflate()
     }
@@ -18,5 +18,4 @@ import com.example.moviereview.domain.critics.critics
         TODO("Not yet implemented")
     }
 
-} {
-*/}*/
+}
