@@ -1,6 +1,5 @@
-package com.example.moviereview.presentation.sreens.reviews
+package com.example.moviereview.presentation.Films
 
-import android.view.View
 import androidx.recyclerview.widget.RecyclerView
 import com.example.moviereview.databinding.ItemArticleBinding
 

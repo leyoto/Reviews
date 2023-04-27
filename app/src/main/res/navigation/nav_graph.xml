@@ -7,16 +7,30 @@
 
     <fragment
         android:id="@+id/filmsFragment"
-        android:name="com.example.moviereview.presentation.sreens.reviews.FilmsFragment"
+        android:name="com.example.moviereview.presentation.Films.FilmsFragment"
         android:label="fragment_films"
-        tools:layout="@layout/fragment_films" />
-    <fragment
-        android:id="@+id/reviewersFragment"
-        android:name="com.example.moviereview.presentation.sreens.ctitics.ReviewersFragment"
-        android:label="fragment_reviewers"
-        tools:layout="@layout/fragment_reviewers" >
+        tools:layout="@layout/fragment_films" >
         <action
-            android:id="@+id/action_reviewersFragment_to_filmsFragment"
+            android:id="@+id/action_filmsFragment_to_criticsFragment"
+            app:destination="@id/criticsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/criticsFragment"
+        android:name="com.example.moviereview.presentation.Critics.CriticsFragment"
+        android:label="CriticsFragment" >
+        <action
+            android:id="@+id/action_criticsFragment_to_filmsFragment"
+            app:destination="@id/filmsFragment" />
+        <action
+            android:id="@+id/action_criticsFragment_to_criticFragment"
+            app:destination="@id/criticFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/criticFragment"
+        android:name="com.example.moviereview.presentation.Critic.CriticFragment"
+        android:label="CriticFragment" >
+        <action
+            android:id="@+id/action_criticFragment_to_filmsFragment"
             app:destination="@id/filmsFragment" />
     </fragment>
 </navigation>
